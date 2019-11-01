@@ -24,7 +24,7 @@ class PickUpUrlClass:
                 img_url = soup.find(class_= "lazy").get("data-original")
                 self.url_list.append(img_url)
             else:
-                self.no_card.append(card)
+                self.no_cards.append(card)
 
     def show_nohit_cards(self):
         print(self.no_cards)
